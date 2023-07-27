@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="data"placeholder="Nhap 1 thang bat ky">
+    <button>Tinh so ngay</button>
+    <p id="ketqua"></p>
+    <script>
+         let month = Number(document.getElementById("data").innerHTML);
+            switch(month){
+                case 4:
+                case 6: 
+                case 9: 
+                case 11:
+                    document.getElementById("ketqua").innerHTML = "Thang " + month + " co 30 ngay";                
+                    break;
+                case 2:                   
+                    document.getElementById("ketqua").innerHTML = "Thang " + month + " co 28 hoac 29 ngay";
+                    break;
+                default:
+                    document.getElementById("ketqua").innerHTML = "Thang " + month + " co 31 ngay";
+            }
+    </script>
+</body>
+</html>

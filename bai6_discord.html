@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- a=b=c deu
+    a=b!=c can hoac vuong can 
+    a!=b!=c khong can 
+    a*a+b*b=c*c vuong  
+
+    =>
+    if a=b && b=c; deu
+    if a=b && a2+b2=c2 vuong can; 
+    if b=c && b2+c2=a2 vuong can;
+    if a=c && a2+c2=b2 vuong can;
+
+    if a2+b2=c2 =>>> a=b vuong can hoac a!=b vuong 
+    else if a2+b2!=c2 va a=b can, a!=b binh thuong
+    else if b2+c2=a2 
+    
+    switch a2+b2-c2 
+    case 0 =>> if a=b vuong can, else vuong 
+    default =>> if a=b can, esle binh thuong  -->
+
+    <script>
+        alert("Nhập lần lượt giá trị ba cạnh tam giác: ");
+        let a = +prompt("Cạnh thứ nhất: ");
+        let b = +prompt("Cạnh thứ hai: ");
+        let c = +prompt("Cạnh thứ ba: ");
+        switch(a*a + b*b - c*c){
+            case 0: 
+                if(a==b){alert("Tam giac Vuông Cân");}
+                else{alert("Tam Giác Vuông");}
+                break;
+            default: 
+                if(a==b || a==c || b==c){alert("Tam giac Cân");}
+                else{alert("Tam Giác Thường");}
+                break;
+        }
+        switch(a*a + c*c - b*b){
+            case 0: 
+                if(a==c){alert("Tam giac Vuông Cân");}
+                else{alert("Tam Giác Vuông");}
+                break;
+            default: 
+                if(a==b || a==c || b==c){alert("Tam giac Cân");}
+                else{alert("Tam Giác Thường");}
+                break;
+        }
+        switch(c*c + b*b - a*a){
+            case 0: 
+                if(c==b){alert("Tam giac Vuông Cân");}
+                else{alert("Tam Giác Vuông");}
+                break;
+            default: 
+                if(a==b || a==c || b==c){alert("Tam giac Cân");}
+                else{alert("Tam Giác Thường");}
+                break;
+        }
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- cong thuc bmi = can nang / chieu cao (m)*chieu cao -->
+    <!-- su dung Math.pow(chieucao, 2) -->
+    <script>
+        let weight = +prompt("Nhap vao can nang cua ban (dang kg): ");
+        let height = +prompt("Nhap vao chieu cao cua ban (dang m): ");
+        let bmi = weight/Math.pow(height, 2);
+        bmi = (Math.round(bmi * 100) / 100).toFixed(2);
+        if(bmi < 18.5){
+            alert("Can nang thap (gay)");
+        }
+        else if(bmi < 24.9){
+            alert("Binh thuong");
+        }
+        else if(bmi < 29.9){
+            alert("Tien beo phi");
+        }
+        else if(bmi < 34.9){
+            alert("Beo phi do I");
+        }
+        else if(bmi < 39.9){
+            alert("Beo hi do II");
+        }
+        else{alert("Beo phi do III")};
+    </script>
+
+</body>
+</html>

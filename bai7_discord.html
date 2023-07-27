@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let year = +prompt("nhap so nam ban muon: ");
+        let month = +prompt("Nhap so thang ban muon: ");
+            switch(month){
+                case 4:
+                case 6: 
+                case 9: 
+                case 11:
+                    alert("Thang " + month + " Nam " + year + " co: 30 ngay");
+                    break;
+                case 2: 
+                    if(year%4 == "0"){
+                        alert("Thang " + month + " Nam " + year + " co: 29 ngay");
+                    }
+                    else{alert("Thang " + month + " Nam " + year + " co: 28 ngay");}
+                    break;
+                default:
+                    alert("Thang " + month + " Nam " + year + " co: 31 ngay");
+            }
+    </script>
+    
+</body>
+</html>
