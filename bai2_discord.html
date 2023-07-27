@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- lam cac bai tu 2-7 tren discord -->
+    <script>
+        let number1 = +prompt("Nhap vao so nguyen dau tien: ");
+        let number2 = +prompt("Nhap vao so nguyen thu hai: ");
+        let number3 = +prompt("Nhap vao so nguyen thu ba: ");
+        if(number1<number2){
+            if(number2<number3){
+                alert(number3 + " la so lon nhat");
+            }
+            else{
+                alert(number2 + " la so lon nhat");
+            }
+        }else if(number1>number3){
+            alert(number1 + " la so lon nhat");
+        }else{
+            alert(number3 + " la so lon nhat");
+        }
+    </script>
+</body>
+</html>
