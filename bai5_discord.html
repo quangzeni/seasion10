@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pHTML = +prompt("Nhap diem HTML: ");
+        let pCSS = +prompt("Nhap diem CSS: ");
+        let pJS = +prompt("Nhap diem javascript: ");
+        let pAverage = (pHTML + pCSS + pJS) /3;
+        if(pAverage < 5){
+            alert("Xep Loai Yeu!");
+        }
+        else if(pAverage < 6){
+            alert("Xep loai Kem");
+        }
+        else if(pAverage < 7){
+            alert("Xep loai Trung Binh");
+        }
+        else if(pAverage < 8){
+            alert("Xep loai Kha");
+        }
+        else if(pAverage < 9){
+            alert("Xep loai Gioi");
+        }
+        else{
+            alert("Xep loai Xuat sac");
+        }
+
+    </script>
+</body>
+</html>
