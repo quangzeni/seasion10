@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Đây là dãy số Chẵn từ 1 đến <span id="soN"></span>.</h2>
+    <p>Tổng các số chẵn trong dãy là: </p>
+    <p id="inRa"></p>
+    <script>
+        let n = +prompt("Nhập số Nguyên Bất Kỳ: ");
+        document.getElementById("soN").innerHTML = n;
+        let sum = 0;
+        for(let i = 0; i <= n; i++){
+            if(i%2 == 0){
+                sum += i;
+            }
+            console.log("day so chan", i);
+        }
+        document.getElementById("inRa").innerHTML = sum;
+    </script> 
+</body>
+</html>

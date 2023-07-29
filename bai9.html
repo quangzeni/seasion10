@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Đây là dãy số ước của <span id="soN"></span>.</h2>
+    <p>Vào console.log để xem</p>
+    <script>
+        let n = +prompt("Nhập số Nguyên Bất Kỳ: ");
+        document.getElementById("soN").innerHTML = n;
+        for(let i = 1; i <= n; i++){
+            if(n%i == 0){
+                console.log("Ước của ", n, "là: ", i);
+            }
+            // switch(n%i){
+            //     case 0: 
+            //         console.log("Ước của ", n, "là: ", i);
+            //         break;
+            //     default: 
+            //         break;
+            // }
+        }
+      
+    </script> 
+</body>
+</html>
