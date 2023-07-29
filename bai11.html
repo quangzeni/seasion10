@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = +prompt("Nhap 1 so:");
+        let tinhTong = 0;
+        for(let i = 1; i < n; i++){
+            if(n%i == 0){
+                tinhTong +=i;
+            }
+        }
+        console.log(n," Co tong cac uoc thuc su la: ",tinhTong);
+        if(n==tinhTong){
+            console.log(n," la so hoan hao.");
+        }
+        else{
+            console.log(n, " khong hoan hao");
+        }
+    </script>
+</body>
+</html>

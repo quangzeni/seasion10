@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Nhập 1 số nguyên n, có a chữ số
+        in ra số đảo ngược của nó.
+        vd 12340,
+        chia lấy dư cho 10 được 0, tạo số ngược hàng là 0;
+        chia n cho 10 làm tròn xuống được 1234. 
+        chia lấy dư cho 10 được 4, tạo số ngược hàng là 4;
+        chia n cho 10 làm tròn xuống được 123.
+        lại chia lấy dư cho 10 được 3, tạo số ngược hàng là 43;
+        chia n cho 10 làm tròn xuống được 12.
+        lại chia lấy dư cho 10 được 2, tạo số ngược hàng là 432;
+        ...
+        -->
+     <script>
+        let n = +prompt("Nhap so n");
+        let soDu = 0;
+        let daoNguoc = 0;
+        while(n>0){
+            soDu = n%10;
+            daoNguoc = daoNguoc *10 + soDu;
+            n = Math.floor(n/10);
+        }
+        console.log("in ra ", daoNguoc);
+     </script>
+</body>
+</html>

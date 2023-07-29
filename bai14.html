@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- lỗi, tại sao có số 9 -->
+<body>
+    <script>
+        let soNguyenTo = +prompt("Nhập số nguyên: ");
+        for (let n = 1; n <= soNguyenTo; n++) {
+            if (soNguyenTo < 2) {
+                console.log("Không có số nguyên tố nào!")
+            }
+            else if (soNguyenTo == 2) {
+                console.log("so ", soNguyenTo, " la so nguyen to")
+            }
+            else if (soNguyenTo > 2) {
+                for (let i = 2; i < n; i++) {
+                    if (n % i !== 0) {
+                        console.log("so ", n, " la so nguyen to")
+                    }
+                    else if (n % i == 0) {
+                        break;
+                    }
+                }
+            }
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
