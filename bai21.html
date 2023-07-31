@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    nhiên liệu từ 5000-30 000
+    phi hành gia 1-7
+    độ cao bay 1 lần 50km
+    1 lần đốt - 1 phi hành gia cần 100 nhiên liệu 
+    ví dụ: 
+    2 phi hành gia và 6000 nhiên liệu: bay cao tới đâu:
+    ((6000)/(100*2))*50
+    hàm for ( i=5000, i<30 000, i= i-100)
+ -->
+    <script>
+        var nhienLieu = +prompt("Nhập số lượng nhiên liệu (khối): ");
+        var phiHanhGia = +prompt("Nhập số lượng Phi Hành Gia");
+        var doCao = 0;
+        if (nhienLieu >= 5000 && nhienLieu <= 30000 && phiHanhGia >= 1 & phiHanhGia <= 7) {
+            doCao = ((nhienLieu) / (100 * phiHanhGia)) * 50;
+            console.log("Độ Cao Tối Đa là: ", doCao, " km");
+            for (let i = nhienLieu; i >= 0; i = i - 100) {
+                console.log("Nhiên liệu còn: ", i, " khối");
+            }
+        }
+        else {
+            console.log("Tàu không thể cất cánh!");
+        }
+    </script>
+</body>
+
+</html>

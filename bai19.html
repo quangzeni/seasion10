@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        trong dãy số i: 100-999 vd 123
+        hangTram = i/100 = 1
+        hangChuc = i%100/10 = 2
+        hangDonVi = i%10
+
+     -->
+     <script>
+        for(let i = 100; i<=999; i++){
+            hangTram = Math.floor(i/100);
+            hangChuc = Math.floor(i%100/10);
+            hangDonVi = Math.floor(i%10);
+            let sum = Math.pow(hangTram,3)+Math.pow(hangChuc,3)+Math.pow(hangDonVi,3)
+            if(sum==i){
+                console.log("Amstrong",sum)
+            }
+        }
+
+     </script>
+</body>
+</html>

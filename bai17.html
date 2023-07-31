@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- nhap 3 so
+    so sanh
+    in ra so to dan
+ -->
+    <script>
+        let soMot = +prompt("Nhap so thu 1: ");
+        let soHai = +prompt("Nhap so thu 2: ");
+        let soBa = +prompt("Nhap so thu 3: ");
+        if(soMot<soHai){
+            if(soHai<soBa){console.log(soBa,soHai,soMot);}
+            else if(soBa<soHai){console.log(soHai,soBa,soMot);}
+        }
+        else if (soMot>soHai){
+            if(soMot<soBa){console.log(soBa,soMot,soHai);}
+            else if(soBa<soMot){console.log(soHai,soMot,soBa);}
+        }
+    </script>
+</body>
+</html>
